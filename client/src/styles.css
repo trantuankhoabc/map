@@ -1,0 +1,50 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+@import "~leaflet/dist/leaflet.css";
+
+
+#toast-container>div {
+  opacity: 1;
+}
+
+body {
+  padding: 20px;
+}
+
+.form-control.ng-touched.ng-invalid {
+  border: 2px solid red;
+}
+
+.logout:hover {
+  cursor: pointer;
+}
+
+
+/* map */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto';
+  color: var(--text-color);
+  margin: 0;
+  --header-color: #ffffff;
+  --sidebar-color: #ffffff;
+  --text-color: black;
+  --light-gray: rgb(255, 255, 255);
+  --medium-gray: rgb(68, 68, 68);
+  --dark-gray: rgb(13, 13, 13);
+  --blue-gray: rgba(65, 147, 219, 0.822);
+  --bluish-gray: rgb(52, 111, 189);
+  --blur-gray: rgba(146, 145, 145, 0.863);
+  --blurish-gray: rgba(224, 220, 220, 0.993);
+  --tmt-blur-gray: rgba(255, 88, 88, 0.7);
+  --tmt-gray: rgba(247, 0, 0, 0.973);
+  --br--icon-showMarker: url('/assets/icon/tree-main.svg');
+  --br--btn-direct: url('/assets/icon/btn-direct.svg');
+  --br--btn-direct-hover: url('/assets/icon/btn-direct-hover.svg');
+  --br--btn-share: url('/assets/icon/btn-share.svg');
+  --br--btn-share-hover: url('/assets/icon/btn-share-hover.svg');
+  --br--icon-target-locate: url('/assets/icon/target-locate.svg');
+  --br--icon-target-locate-hover: url('/assets/icon/target-locate-hover.svg');
+}

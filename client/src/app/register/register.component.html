@@ -1,0 +1,27 @@
+<div class="text-center mb-4">
+  <img class="mb-4 rounded-circle" src="assets/map-icon-225x225.png" alt="logo" loading="lazy" width="180"
+    height="180" />
+  <h1 class="h3 mb-3">TMT Map</h1>
+</div>
+
+<form class="form-signin" #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+  <div class="container-fluid">
+    <h2 class="text-center">Đăng ký</h2>
+    <div *ngIf="invalidRegister" class="alert alert-danger">User already exists / register user failed.</div>
+    <br />
+    <label for="username" class="sr-only">User Name</label>
+    <input type="text" id="username" name="username" ngModel class="form-control" placeholder="User Name" required
+      autofocus>
+    <br />
+    <label for="email" class="sr-only">Email</label>
+    <input type="email" id="email" name="email" ngModel class="form-control" placeholder="Email" required>
+    <br />
+    <label for="password" class="sr-only">Password</label>
+    <input type="password" id="password" name="password" ngModel class="form-control" placeholder="Password" required>
+    <br />
+    <div class="text-center">
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </div>
+
+  </div>
+</form>
